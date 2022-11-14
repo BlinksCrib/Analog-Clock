@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #040c18;
+}
+.clock {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  border-radius: 50%;
+  position: relative;
+}
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  padding: 10px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.clock .number1 {
+  transform: rotate(30deg);
+}
+.clock .number2 {
+  transform: rotate(60deg);
+}
+.clock .number3 {
+  transform: rotate(90deg);
+}
+.clock .number4 {
+  transform: rotate(120deg);
+}
+.clock .number5 {
+  transform: rotate(150deg);
+}
+.clock .number6 {
+  transform: rotate(180deg);
+}
+.clock .number7 {
+  transform: rotate(210deg);
+}
+.clock .number8 {
+  transform: rotate(240deg);
+}
+.clock .number9 {
+  transform: rotate(270deg);
+}
+.clock .number10 {
+  transform: rotate(300deg);
+}
+.clock .number11 {
+  transform: rotate(330deg);
+}
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  background-color: #ffffff;
+  z-index: 11;
+  transform-origin: bottom;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+.clock .line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: transparent;
+  text-align: center;
+  padding: 10px;
+}
+.line1 {
+  transform: rotate(6deg);
+}
+.line2 {
+  transform: rotate(12deg);
+}
+.line3 {
+  transform: rotate(18deg);
+}
+.line4 {
+  transform: rotate(24deg);
+}
+.line5 {
+  transform: rotate(36deg);
+}
+.line6 {
+  transform: rotate(42deg);
+}
+.line7 {
+  transform: rotate(48deg);
+}
+.line8 {
+  transform: rotate(54deg);
+}
+.line9 {
+  transform: rotate(66deg);
+}
+.line10 {
+  transform: rotate(72deg);
+}
+.line11 {
+  transform: rotate(78deg);
+}
+.line12 {
+  transform: rotate(84deg);
+}
+.line13 {
+  transform: rotate(96deg);
+}
+.line14 {
+  transform: rotate(102deg);
+}
+.line15 {
+  transform: rotate(108deg);
+}
+.line16 {
+  transform: rotate(114deg);
+}
+.line17 {
+  transform: rotate(126deg);
+}
+.line18 {
+  transform: rotate(132deg);
+}
+.line19 {
+  transform: rotate(138deg);
+}
+.line20 {
+  transform: rotate(144deg);
+}
+.line21 {
+  transform: rotate(156deg);
+}
+.line22 {
+  transform: rotate(162deg);
+}
+.line23 {
+  transform: rotate(168deg);
+}
+.line24 {
+  transform: rotate(174deg);
+}
+.line25 {
+  transform: rotate(186deg);
+}
+.line26 {
+  transform: rotate(192deg);
+}
+.line27 {
+  transform: rotate(198deg);
+}
+.line28 {
+  transform: rotate(204deg);
+}
+.line29 {
+  transform: rotate(216deg);
+}
+.line30 {
+  transform: rotate(222deg);
+}
+.line31 {
+  transform: rotate(228deg);
+}
+.line32 {
+  transform: rotate(234deg);
+}
+.line33 {
+  transform: rotate(246deg);
+}
+.line34 {
+  transform: rotate(252deg);
+}
+.line35 {
+  transform: rotate(258deg);
+}
+.line36 {
+  transform: rotate(264deg);
+}
+.line37 {
+  transform: rotate(276deg);
+}
+.line38 {
+  transform: rotate(282deg);
+}
+.line39 {
+  transform: rotate(288deg);
+}
+.line40 {
+  transform: rotate(294deg);
+}
+.line41 {
+  transform: rotate(306deg);
+}
+.line42 {
+  transform: rotate(312deg);
+}
+.line43 {
+  transform: rotate(318deg);
+}
+.line44 {
+  transform: rotate(324deg);
+}
+.line45 {
+  transform: rotate(336deg);
+}
+.line46 {
+  transform: rotate(342deg);
+}
+.line47 {
+  transform: rotate(348deg);
+}
+.line48 {
+  transform: rotate(354deg);
+}
+.clock .seconds {
+  width: 2px;
+  height: 45%;
+}
+.clock .hour {
+  width: 5px;
+  height: 35%;
+}
+.minutes {
+  width: 3px;
+  height: 43%;
+}
+.clock::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
